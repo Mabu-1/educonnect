@@ -100,7 +100,7 @@ const HomePage = () => {
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32 grainy">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center relative isolate">
+        <div className=" flex flex-col items-center gap-4 text-center relative isolate">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -119,7 +119,7 @@ const HomePage = () => {
           <h1 className="font-heading text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
             Learn Today, Lead Tomorrow.
           </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+          <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             “You don’t understand anything until you learn it more than one
             way.”
           </p>
@@ -139,7 +139,7 @@ const HomePage = () => {
       {/* Categories Section */}
       <section
         id="categories"
-        className="container space-y-6  py-8  md:py-12 lg:py-24"
+        className="space-y-6  py-8  md:py-12 lg:py-24"
       >
         <div className="flex items-center justify-between">
           <SectionTitle>Categories</SectionTitle>
@@ -151,7 +151,7 @@ const HomePage = () => {
             Browse All <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>
-        <div className="mx-auto grid justify-center gap-4 grid-cols-2  md:grid-cols-3 2xl:grid-cols-4">
+        <div className="grid justify-center gap-4 grid-cols-2  md:grid-cols-3 2xl:grid-cols-4">
           {categories.map((category) => {
             return (
               <Link
@@ -175,7 +175,7 @@ const HomePage = () => {
       </section>
 
       {/* Courses */}
-      <section id="courses" className="container space-y-6   md:py-12 lg:py-24">
+      <section id="courses" className="space-y-6   md:py-12 lg:py-24">
         <div className="flex items-center justify-between">
           <SectionTitle>Courses</SectionTitle>
           <Link
