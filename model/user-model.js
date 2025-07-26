@@ -1,11 +1,13 @@
 import mongoose, { Schema } from "mongoose";
 
 const userSchema = new Schema({
-    firstName: {
+    // Corrected to snake_case to match your database
+    first_name: {
         required: true,
         type: String,
     },
-    lastName: {
+    // Corrected to snake_case
+    last_name: {
         required: true,
         type: String,
     },
@@ -29,11 +31,12 @@ const userSchema = new Schema({
         required: false,
         type: String,
     },
-    socialMedia: {
+    social_media: { // Corrected to snake_case
         required: false,
         type: Object,
     },
-    profilePicture: {
+    // Corrected to snake_case
+    profile_picture: {
         required: false,
         type: String,
     },

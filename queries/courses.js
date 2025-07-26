@@ -51,13 +51,6 @@ export async function getCourseDetails(id) {
             path: "lessonIds",
             model: Lesson
         }
-    }).populate({
-        path: "quizSet",
-        model: Quizset,
-        populate: {
-            path: "quizIds",
-            model: Quiz
-        }
     }).lean();
 
     return replaceMongoIdInObject(course)
